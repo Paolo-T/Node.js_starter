@@ -23,7 +23,7 @@ $ npm install express --save
 
 ```
 const express = require('express');
-require ('path');
+const path    = require ('path');
 
 const app = express();
 
