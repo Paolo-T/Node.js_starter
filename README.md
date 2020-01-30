@@ -13,6 +13,7 @@
 # Express
 ## Setup and notes
 
+## All setup
 ```
 const express = require('express');
 require ('path');
@@ -28,9 +29,8 @@ app.get('/', (req, res) => {
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => console.log(`Server started on ${PORT}`));
+
 ```
-
-
 
 
 
