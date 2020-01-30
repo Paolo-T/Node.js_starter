@@ -38,13 +38,12 @@ const app = express();
 * #### Create local PORT
 ```
 const PORT = process.env.PORT || 5000;
+
 ```
 
 * #### Listen on the PORT
 ```
-app.listen(PORT, () => console.log('Server started on ${PORT}'));
+app.listen(PORT, () => console.log(`Server started on ${PORT}`));
+
 ```
 
-
-//Listen on a port
-app.listen(5000);
