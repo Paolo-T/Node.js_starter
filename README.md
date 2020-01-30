@@ -33,7 +33,17 @@ const server = http.createServer((req, res) => {
 * #### Init express
 ```
 const app = express();
+
 ```
+
+* #### create route to entry point
+```
+app.get('/', (req, res) => {
+  res.send('<h1>Hello world</h1>');
+});
+
+```
+
 
 * #### Create local PORT
 ```
