@@ -63,11 +63,10 @@ npm i -D nodemon
 ```
 
 * #### Add scripts to package.json
-"start" to run node
-"dev" to watch for changes and reload
+"start" to run node, "dev" to watch for changes without the need to restart the server.
 ```
 "start": "node index",
-"dev": "nodemon index",
+"dev": "nodemon index"
 
 ```
 
