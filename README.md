@@ -14,6 +14,11 @@
 
 ## Setup
 ```
+npm init
+$ npm install express --save
+
+```
+```
 const express = require('express');
 require ('path');
 
@@ -31,7 +36,7 @@ app.listen(PORT, () => console.log(`Server started on ${PORT}`));
 
 ```
 
-
+## Step by step explanation
 
 ```
 npm init
