@@ -11,9 +11,8 @@
 
 
 # Express
-## Setup and notes
 
-## All setup
+## Setup
 ```
 const express = require('express');
 require ('path');
