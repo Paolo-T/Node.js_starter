@@ -18,7 +18,7 @@ $ npm install express --save
 
 ```
 
-#### Http - Creating local Server
+* ### Http - Creating local Server
 
 ```
 const server = http.createServer((req, res) => {
@@ -30,17 +30,17 @@ const server = http.createServer((req, res) => {
 
 ```
 
-##### Init express
+* #### Init express
 ```
 const app = express();
 ```
 
-##### Create local PORT
+* #### Create local PORT
 ```
 const PORT = process.env.PORT || 5000;
 ```
 
-##### Listen on the PORT
+* #### Listen on the PORT
 ```
 app.listen(PORT, () => console.log('Server started on ${PORT}'));
 ```
