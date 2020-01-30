@@ -10,7 +10,7 @@
 ## Http
 #### Creating local Server
 
-`
+```
 const server = http.createServer((req, res) => {
 //   if (req.url == '/') {
 //     res.write('Hello world');
@@ -18,5 +18,5 @@ const server = http.createServer((req, res) => {
 //   }
 // });
 
-`
+```
 
