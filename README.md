@@ -7,6 +7,19 @@
 * http
 * EventEmitter
 
+
+
+
+# Express
+
+```
+npm init
+$ npm install express --save
+
+```
+
+
+```
 ## Http
 #### Creating local Server
 
@@ -19,12 +32,4 @@ const server = http.createServer((req, res) => {
 // });
 
 ```
-
-
-# Express
-
-```
-npm init
-$ npm install express --save
-
 ```
