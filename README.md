@@ -29,3 +29,13 @@ const server = http.createServer((req, res) => {
 // });
 
 ```
+
+#### Init express
+```
+const app = express();
+```
+
+#### Create local port
+```
+const PORT = process.env.PORT || 5000;
+```
