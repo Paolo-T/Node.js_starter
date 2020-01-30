@@ -22,3 +22,9 @@ const server = http.createServer((req, res) => {
 
 
 # Express
+
+```
+npm init
+$ npm install express --save
+
+```
