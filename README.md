@@ -18,10 +18,7 @@ $ npm install express --save
 
 ```
 
-
-```
-## Http
-#### Creating local Server
+#### Http - Creating local Server
 
 ```
 const server = http.createServer((req, res) => {
@@ -31,5 +28,4 @@ const server = http.createServer((req, res) => {
 //   }
 // });
 
-```
 ```
