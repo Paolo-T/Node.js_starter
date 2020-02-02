@@ -23,13 +23,13 @@ $ npm install express --save
 
 ```
 const express = require('express');  //returns a function
-const app = express();
+const app     = express();
 const path    = require('path');
 
 app.use(express.json()); // Built in middleware. It parses incoming requests with JSON payloads.
 
 app.get('/', (req, res) => {
-  res.send('App started');
+  res.send('<h4>App started</h4>');
 });
 
 // Set static folder to serve html and files
@@ -39,7 +39,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 
-const PORT = process.env.PORT || 6000;
+
+const PORT = process.env.PORT || 5000;
+// Starting server
 app.listen(PORT, () => console.log(`Server started on port:${PORT}...`));
 
 ```
