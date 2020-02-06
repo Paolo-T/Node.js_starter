@@ -1,6 +1,6 @@
 # Node.js
 
-# Most used /useful modules are:
+# Most used/useful modules are:
 * path
 * fs
 * os
@@ -23,26 +23,46 @@ $ npm install express --save
 
 ```
 const express = require('express');  //returns a function
-const app     = express();
+const app     = express();           // Call the express function
 const path    = require('path');
+const morgan  = require('morgan');
+
+var indexRouter = require('./api/routes');
+
+
+
+app.use(morgan('dev')); // Log request info in the console
 
 app.use(express.json()); // Built in middleware. It parses incoming requests with JSON payloads.
-
-app.get('/', (req, res) => {
-  res.send('<h4>App started</h4>');
-});
 
 // Set static folder to serve html and files
 app.use(express.static(path.join(__dirname, 'public')));
 
+// Require routes
+app.use('/', indexRouter);
+
+// Error handling
+app.use((req, res,  next) => {
+	const error = new Error('Unknown Request');
+	error.status(404);
+	next(error);
+});
+
+app.use((error, req, res, next) => {
+	res.status(error.status || 500);
+	res.json({
+		error: {
+			message: error.message
+		}
+	})
+});
 
 
 
+module.exports = app;
 
 
-const PORT = process.env.PORT || 5000;
-// Starting server
-app.listen(PORT, () => console.log(`Server started on port:${PORT}...`));
+
 
 ```
 
