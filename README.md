@@ -115,7 +115,7 @@ app.listen(PORT, () => console.log(`Server started on ${PORT}`));
 
 ```
 
-* #### Install watch and auto reload as dev dependency
+* #### Install watch on file changes
 ```
 npm i -D nodemon
 ```
